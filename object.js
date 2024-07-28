@@ -17,3 +17,5 @@ console.log(students["ug1"]["numbers"]);
 let x = "ug1";
 let y = "numbers";
 console.log(students[x][y]);
+let z = Symbol("hello");
+console.log(typeof(z));
