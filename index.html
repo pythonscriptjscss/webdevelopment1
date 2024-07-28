@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Navbar</title>
+<style>
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #232f3e;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #344955;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f0a500;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #f0a500;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ed9121;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Amazon</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Your Orders</a></li>
+    <li><a href="#">Your Lists</a></li>
+    <li><a href="#">Your Account</a></li>
+    <li><a href="#">Sell</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </div>
+</nav>
+
+</body>
+</html>
+x6

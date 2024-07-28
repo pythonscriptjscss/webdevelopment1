@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JS program</title>
+</head>
+<body>
+    <h2>WE ARE READING JAVASCRIPT</h2>
+    <p id = "demo">javascript can change html content</p>
+    <p id ="erase">It will erase all the existing content</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello I am Sayan"'>Click me</button>
+    <hr>
+    <button onclick="document.getElementById('myImage').src='imgbulb.avif'">Turn on the light</button>
+
+<img id="myImage" src="images.jpg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='images.jpg'">Turn off the light</button>
+<hr>
+<!-- here the document.write does not take the id so,obviously the place where it work is not mentioned,so it removed all the existing  -->
+<button type="button" onclick="document.write('I Earse all the existing')">Erase all</button>
+<hr>
+<button onclick="window.print()">Print this page</button>
+<script>alert(5+6)</script>
+</body>
+</html>

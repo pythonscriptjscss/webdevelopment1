@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tfoot {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Table 1</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="4">Table 1 Header</th>
+        </tr>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Rowspan 2</td>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+        <tr>
+            <td>Data 7</td>
+            <td colspan="3">Colspan 3</td>
+        </tr>
+        <tr>
+            <td>Data 8</td>
+            <td>Data 9</td>
+            <td>Data 10</td>
+            <td>Data 11</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Table 1 Footer</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h2>Table 2</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Table 2 Header</th>
+        </tr>
+        <tr>
+            <th>Column A</th>
+            <th>Column B</th>
+            <th>Column C</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Rowspan 2</td>
+            <td>Data A</td>
+            <td>Data B</td>
+        </tr>
+        <tr>
+            <td>Data C</td>
+            <td>Data D</td>
+        </tr>
+        <tr>
+            <td>Data E</td>
+            <td colspan="2">Colspan 2</td>
+        </tr>
+        <tr>
+            <td>Data F</td>
+            <td>Data G</td>
+            <td>Data H</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Table 2 Footer</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h2>Table 3</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Table 3 Header</th>
+        </tr>
+        <tr>
+            <th>Column X</th>
+            <th>Column Y</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data X1</td>
+            <td>Data Y1</td>
+        </tr>
+        <tr>
+            <td>Data X2</td>
+            <td>Data Y2</td>
+        </tr>
+        <tr>
+            <td>Data X3</td>
+            <td>Data Y3</td>
+        </tr>
+        <tr>
+            <td>Data X4</td>
+            <td>Data Y4</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Table 3 Footer</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Vidyamandira3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4c5656;
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 0px 40px 0px 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding:3px;
+    margin: 10px;
+}
+label {
+    font-size: 25px;
+    font-weight: 10;
+    color: #000;
+}
+h1{
+    color: #000;
+}
+button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Default color */
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:hover {
+    background-color: #0056b3; /* Hover color */
+}

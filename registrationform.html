@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="post" onsubmit=" return validateForm()">
+            <div>
+                <h1>Apply for learning web development</h1>
+            </div>
+            <div>
+                <label for="name">Name:-</label>
+                <input type="text" id="name" pattern="[A-Za-z\s]+" name="username" pattern="[A-Za-z\s]+"
+                    placeholder="Enter your Name">
+            </div>
+            <div>
+                <label for="AdharNO">Adhar No:-</label>
+                <input type="number" id="AdharNO" pattern="/d+" placeholder="Enter your Adhar No">
+            </div>
+            <div>
+                <label for="Gender">Gender:-</label>
+            <input type="radio" id="Male" name="gender" value="male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="female">
+            <label for="Female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            </div>
+            <div>
+                <label for="Rllno">Roll No:-</label>
+                <input type="text" id="Rllno" pattern="/d+" placeholder="Enter your Roll No">
+            </div>
+            <div>
+                <input type="checkbox">Do you Agree?</input>
+            </div>
+            <div><button type="submit">Submit</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
