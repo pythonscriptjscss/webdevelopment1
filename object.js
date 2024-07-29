@@ -19,3 +19,14 @@ let y = "numbers";
 console.log(students[x][y]);
 let z = Symbol("hello");
 console.log(typeof(z));
+//we can make a function in an object like the below
+const object2 = {radius:24,area:function calc(){
+       return (this.radius ** 2) * 3.14 
+}, perimeter: function find(){
+    return (this.radius)*2*3.14
+} };
+
+console.log(object2.area());
+console.log(object2.area);
+console.log(object2.perimeter());
+console.log(object2.perimeter);
