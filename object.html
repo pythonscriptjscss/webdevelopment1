@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //there are different type of objects;
+        const object1 = { "property1":"hello","property2":"hi"};
+        console.log(typeof(object1));
+        
+        //we can also make an complex nested object
+        
+        const students = {
+            "ug1":{"numbers":17,"sub":"mathametics","performance":"good"},
+            "ug2":{"numbers":22,"sub":"computerscience","performance":"well"}
+        };
+        
+        //we can access the values in this way
+        console.log(students.ug1.numbers);
+        //or
+        console.log(students["ug1"]["numbers"]);
+        //or
+        let x = "ug1";
+        let y = "numbers";
+        console.log(students[x][y]);
+        let z = Symbol("hello");
+        console.log(typeof(z));
+        //we can make a function in an object like the below
+        const object2 = {radius:24,area:function calc(){
+               return (this.radius ** 2) * 3.14 
+        }, perimeter: function find(){
+            return (this.radius)*2*3.14
+        } };
+        
+        console.log(object2.area());
+        console.log(object2.area);
+        console.log(object2.perimeter());
+        console.log(object2.perimeter);
+        
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+          };
+          
+          // Build a Text
+          let text = "";
+          for (let x in person) {
+            text += person[x] + " ";
+          };
+        
+          console.log(text);
+        
+          const person1 = {
+            name: "hero",
+            age: 45,
+            city: "Delhi"
+          };
+          
+          // Create an Array
+          const myArray = Object.values(person1);
+        
+          console.log(myArray);
+        
+          const fruits = {Bananas:300, Oranges:200, Apples:500};
+        
+        let text1 = "";
+        for (let [fruit, value] of Object.entries(fruits)) {
+          text1 += fruit + ": " + value;
+        }
+        
+        console.log(text1);
+        
+        const person3 = {
+            name: "krishna",
+            age: 15,
+            city: "nagaland"
+          };
+          
+          // Stringify Object
+          let myString = JSON.stringify(person);
+        
+          console.log(myString);
+        
+        
+        </script>
+</body>
+</html>
