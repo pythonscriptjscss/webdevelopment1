@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(9, 184, 117);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(15, 15, 41);
+            color: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .container {
+            background-color: #fff;
+            width: 40%;
+            height: 100vh;
+            padding: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        span{
+            color: red;
+        }
+        label{
+            font-style: bold;
+            font-weight: 400;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right:50px;  
+        }
+        #client-name,#company,#title,#department,#c{
+            width: 25vh;
+            border: none;
+            border-bottom: 2px solid silver;
+        }
+        #client-name:hover,#company:hover,#title:hover,#department:hover,#c:hover{
+            border-bottom: 2px solid black;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .form-group label {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex: 2;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .form-group input[type="radio"] {
+            margin: 0 5px 0 0;
+            flex: 0;
+        }
+        .inline {
+            display: flex;
+            align-items: center;
+        }
+        .inline label {
+            margin-right: 20px;
+        }
+        .submit-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .submit-btn button {
+            padding: 10px 20px;
+            background-color: #09b875;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #company-logo{
+            border-style: dashed;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Client Details</h1>
+            <small>Enter the details of all incoming clients</small>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="client-name">Client Name <span>*</span></label>
+                <input type="text" id="client-name" name="client-name" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company <span>*</span></label>
+                <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+            </div>
+        <div class="form-group">
+            <label for="department">Department <span>*</span></label>
+            <select id="department" name="department" required>
+                <option value="">-Select-</option>
+                <option value="HR">HR</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Sales">Sales</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="contact-method">Preferred contact method <span>*</span></label>
+            <div class="inline">
+                <input type="radio" id="email" name="contact-method" value="email" required>
+                <label for="email">Email</label>
+                <input type="radio" id="phone" name="contact-method" value="phone">
+                <label for="phone">Phone</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="company-address">Company address <span>*</span></label>
+            <div> <input type="text" id="c" name="company-address" placeholder="Street Address" required></div>
+        </div>
+        <div class="form-group">
+            <input type="text" id="c" name="address-line-2" placeholder="Address Line 2">
+        </div>
+        <div class="form-group"><input type="text" id="c" name="city" placeholder="City" required>
+        <input type="text" id="c" name="state" placeholder="State/Region/Province" required>
+    </div>
+    <div class="form-group">
+        <input type="text" id="c" name="postal-code" placeholder="Postal / Zip Code" required>
+        <input type="text" id="c" name="country" placeholder="Country" required>
+    </div>
+        <div class="form-group">
+            <label for="company-website">Company website <span>*</span></label>
+            <input type="url" id="c" name="company-website" required>
+        </div>
+        <div class="form-group">
+            <label for="company-logo">Company logo</label>
+            <input type="file" id="company-logo" name="company-logo">
+        </div>
+        <div class="form-group">
+            <label for="working-hours">Working Hours <span>*</span></label>
+            <input type="text" id="c" name="working-hours" required>
+        </div>
+        <div class="form-group">
+            <label for="working-days">Working Days <span>*</span></label>
+            <input type="text" id="c" name="working-days" required>
+        </div>
+        <div class="form-group">
+            <label for="billing-cycle">Billing Cycle <span>*</span></label>
+            <input type="date" id="c" name="billing-cycle" required>
+        </div>
+        <div class="form-group">
+            <label for="additional-info">Additional Information</label>
+            <textarea id="c" name="additional-info" rows="3"></textarea>
+        </div>
+        <div class="submit-btn">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
